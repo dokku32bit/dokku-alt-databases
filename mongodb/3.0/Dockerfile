@@ -1,4 +1,4 @@
-FROM patrickjahns/ubuntu-debootstrap:14.04
+FROM dokku32bit/ubuntu-debootstrap:14.04
 RUN apt-get -qq update && apt-get upgrade -y				&& \
     apt-get -y install wget gcc-4.8 gcc scons python2.7 		&& \
     wget https://fastdl.mongodb.org/linux/mongodb-linux-i686-3.0.2.tgz 	&& \

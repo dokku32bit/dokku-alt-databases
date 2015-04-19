@@ -1,4 +1,4 @@
-FROM patrickjahns/ubuntu-debootstrap:14.04
+FROM dokku32bit/ubuntu-debootstrap:14.04
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0xcbcb082a1bb943db && \
 	echo "deb http://mirrors.n-ix.net/mariadb/repo/5.5/ubuntu trusty main" > /etc/apt/sources.list.d/mariadb.list && \

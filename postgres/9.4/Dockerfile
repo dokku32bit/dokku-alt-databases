@@ -1,4 +1,4 @@
-FROM patrickjahns/ubuntu-debootstrap:14.04
+FROM dokku32bit/ubuntu-debootstrap:14.04
 RUN apt-get -qq update                                                                                          && \
     apt-get install -y -qq python-software-properties software-properties-common wget                           && \
     echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > /etc/apt/sources.list.d/pgdg.list   && \
